@@ -1,7 +1,7 @@
 :root {
     box-sizing: border-box;
-    --spacing: 10px;
-    --blur: 5px;
+    --spacing: 0px;
+    --blur: 0px;
     --color: #ffceef;
 }
 
@@ -24,6 +24,7 @@ body {
 
 .container {
     display: flex;
+    align-items: center;
     width: 100%;
 }
 
@@ -37,8 +38,6 @@ body {
 }
 
 .controls-section__item-label {
-    display: block;
-    margin-bottom: 0.5em;
     font-size: 1.5em;
     color: #df139b;
     display: flex;
@@ -48,7 +47,8 @@ body {
 
 .inputValue {
     color: var(--color);
-    font-size: 1.8em;
+    font-size: 1.6em;
+    min-width: 70px;
 }
 
 .controls-section__item-input {
@@ -61,6 +61,11 @@ body {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: inset 0 0 10px hsla(67, 100%, 50%, .9);
+    margin-top: .5em;
+}
+
+.controls-section__item-input:focus {
+    box-shadow: 0 0 10px hsla(67, 100%, 50%, .9);
 }
 
 .controls-section__item-input::-webkit-slider-thumb {
@@ -71,7 +76,7 @@ body {
     border-radius: 50%;
     background: linear-gradient(125deg, hsla(67, 100%, 50%, .9), rgba(26, 12, 228, 0.9));
     cursor: pointer;
-    border: 4px solid rgb(112, 23, 23);
+    border: 4px solid rgb(171, 236, 19);
 }
 
 
