@@ -1,0 +1,88 @@
+:root {
+    box-sizing: border-box;
+    --spacing: 10px;
+    --blur: 5px;
+    --color: #ffceef;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: hsl(184, 78%, 42%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.controls-section {
+    flex-shrink: 1;
+    margin-right: 2em;
+}
+
+.controls-section__item {
+    margin-bottom: 1em;
+}
+
+.controls-section__item-label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    color: #df139b;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inputValue {
+    color: var(--color);
+    font-size: 1.8em;
+}
+
+.controls-section__item-input {
+    width: 200px;
+    height: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: hsla(241, 67%, 75%, 0.49);
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px hsla(67, 100%, 50%, .9);
+}
+
+.controls-section__item-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: linear-gradient(125deg, hsla(67, 100%, 50%, .9), rgba(26, 12, 228, 0.9));
+    cursor: pointer;
+    border: 4px solid rgb(112, 23, 23);
+}
+
+
+.poster-section {
+    flex-grow: 1;
+    max-width: 50em;
+}
+
+.poster-section__img {
+    width: 100%;
+    background: var(--color);
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+}

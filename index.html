@@ -11,21 +11,30 @@
 
     <div class="container">
         <div class="controls-section">
-            <div class="controls-section-item spacing">
-                <label class="controls-section-item-label" for="spacing">Spacing</label>
-                <input class="controls-section-item-input" type="range" id="spacing" min="10" max="200" value="30"/>
+            <div class="controls-section__item spacing">
+                <label class="controls-section__item-label" for="spacing">
+                    Spacing:
+                    <span class="inputValue">0</span>
+                </label>
+                <input class="controls-section__item-input" name="spacingValue" type="range" id="spacing" min="10" max="200" value="30"/>
             </div>
-            <div class="controls-section-item blur">
-                <label class="controls-section-item-label" for="blur">Blur</label>
-                <input class="controls-section-item-input" type="range" id="blur" min="5" max="30" value="10"/>
+            <div class="controls-section__item blur">
+                <label class="controls-section__item-label" for="blur">
+                    Blur:
+                    <span class="inputValue">0</span>
+                </label>
+                <input class="controls-section__item-input" name="blurValue" type="range" id="blur" min="5" max="30" value="10"/>
             </div>
-            <div class="controls-section-item color">
-                <label class="controls-section-item-label" for="color">Color</label>
-                <input class="controls-section-item-input" type="color" id="color" value="#ffceef"/>
+            <div class="controls-section__item color">
+                <label class="controls-section__item-label" for="color">
+                    Color:
+                    <span class="inputValue">#ffceef</span>
+                </label>
+                <input class="controls-section__item-input" name="colorValue" type="color" id="color" value="#ffceef"/>
             </div>
         </div>
         <div class="poster-section">
-            <img src="mohamed-nohassi-odxB5oIG_iA-unsplash.jpg" alt="poster" />
+            <img class="poster-section__img" src="mohamed-nohassi-odxB5oIG_iA-unsplash.jpg" alt="poster" />
         </div>
     </div>
     
